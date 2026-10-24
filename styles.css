@@ -1,0 +1,462 @@
+/* ============================================
+   Stuti Agrawal — Portfolio Design System v1.0
+   Shared styles
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Plus+Jakarta+Sans:wght@400;500&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap');
+
+:root {
+  /* Backgrounds */
+  --bg-page: #1A1714;
+  --bg-surface: #222019;
+  --bg-elevated: #2A2724;
+  --bg-screenshot: #252220;
+  --bg-artefact: #F0EDE6;
+
+  /* Text */
+  --text-primary: #EDE8DF;
+  --text-secondary: #D8D3CA;
+  --text-tertiary: #C3BDB4;
+  --text-body: #B8B3A8;
+  --text-muted: #7A7670;
+  --text-ghost: #4A4844;
+  --text-accent: #D97757;
+
+  /* Borders */
+  --border-default: #2A2724;
+  --border-divider: #3A3632;
+  --border-accent: #D97757;
+
+  /* Type */
+  --font-display: 'Hedvig Letters Serif', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
+  --font-label: 'Satoshi', 'Plus Jakarta Sans', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-page);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* ---------- Layout ---------- */
+.page {
+  max-width: 1136px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+/* ---------- Navigation ---------- */
+.nav {
+  border-bottom: 1px solid var(--border-divider);
+  background: var(--bg-page);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-inner {
+  max-width: 1136px;
+  margin: 0 auto;
+  height: 56px;
+  padding: 0 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-identity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: var(--text-tertiary);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.nav-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.nav-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.nav-name .nav-suffix {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1;
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover { color: var(--text-primary); }
+
+/* ---------- Type ---------- */
+.label {
+  font-family: var(--font-label);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-accent);
+  line-height: 1.4;
+}
+
+.label-section {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-ghost);
+  line-height: 1.4;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.3px;
+  color: var(--text-primary);
+  text-wrap: pretty;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  color: var(--text-primary);
+  text-wrap: pretty;
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.1px;
+  color: var(--text-secondary);
+  text-wrap: pretty;
+}
+
+.body-l {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-body);
+}
+
+.body-m {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-body);
+}
+
+.body-s {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.caption {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* ---------- Divider ---------- */
+.divider {
+  height: 1px;
+  background: var(--border-divider);
+  border: none;
+  width: 100%;
+}
+
+/* ---------- Metric ---------- */
+.metric-row {
+  display: flex;
+  gap: 40px;
+}
+
+.metric-value {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.3px;
+  color: var(--text-primary);
+}
+
+.metric-label {
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-ghost);
+  margin-top: 4px;
+}
+
+/* ---------- Info card ---------- */
+.info-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.info-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  padding: 16px 20px;
+}
+
+.info-card-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-ghost);
+  margin-bottom: 8px;
+}
+
+.info-card-value {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+/* ---------- Screenshot / Artefact frames ---------- */
+/* ---------- Screenshot frame — "Dim + ambient lift" ----------
+   The shot floats on the page: dimmed slightly so it never glares,
+   lifted by a deep shadow and a soft ambient halo behind it.
+   Per-shot glow tint via --shot-glow (defaults to a warm accent halo). */
+.screenshot-frame {
+  position: relative;
+  border-radius: 12px;
+}
+
+.screenshot-frame::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  width: 112%;
+  height: 124%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(closest-side, var(--shot-glow, rgba(217, 119, 87, 0.15)), transparent 72%);
+  filter: blur(14px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.screenshot-frame > * {
+  position: relative;
+  z-index: 1;
+}
+
+.screenshot-frame > img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  filter: brightness(0.94) contrast(0.985) saturate(0.98);
+  box-shadow: 0 38px 70px -26px rgba(0, 0, 0, 0.72);
+}
+
+/* pre-image state: a quiet dashed placeholder card */
+.screenshot-frame > .placeholder {
+  width: 100%;
+  background: var(--bg-screenshot);
+  border: 1px dashed var(--border-divider);
+  border-radius: 12px;
+  box-shadow: 0 38px 70px -26px rgba(0, 0, 0, 0.5);
+}
+
+.artefact-frame {
+  background: var(--bg-artefact);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 38px 70px -28px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Placeholder ---------- */
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  width: 100%;
+}
+
+.placeholder span {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 12px;
+  color: var(--text-ghost);
+}
+
+.artefact-frame .placeholder span {
+  color: #A8A296;
+}
+
+/* ---------- CTA link ---------- */
+.cta-link {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-accent);
+  transition: color 0.15s ease;
+}
+
+.cta-link:hover { color: var(--text-primary); }
+
+/* ---------- Password gate / modal ---------- */
+.pw-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(16, 14, 12, 0.74);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.pw-overlay.open { display: flex; opacity: 1; }
+
+.pw-modal {
+  width: 400px;
+  max-width: 100%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-divider);
+  border-radius: 12px;
+  padding: 36px 32px 32px;
+  transform: translateY(10px) scale(0.98);
+  transition: transform 0.28s cubic-bezier(.2,.7,.2,1);
+}
+
+.pw-overlay.open .pw-modal { transform: none; }
+
+.pw-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background: #2A1A1A;
+  border: 1px solid #3A2A2A;
+  color: var(--text-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pw-icon svg { width: 19px; height: 19px; }
+
+.pw-modal h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.pw-modal .pw-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.pw-form { display: flex; flex-direction: column; gap: 14px; }
+
+.pw-input {
+  width: 100%;
+  background: var(--bg-page);
+  border: 1px solid var(--border-divider);
+  border-radius: 8px;
+  padding: 13px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.pw-input::placeholder { color: var(--text-ghost); }
+.pw-input:focus { border-color: var(--border-accent); }
+
+.pw-error {
+  font-size: 12px;
+  color: var(--text-accent);
+  min-height: 14px;
+  margin-top: -4px;
+}
+
+.pw-actions { display: flex; gap: 10px; margin-top: 2px; }
+
+.pw-btn {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 12px 18px;
+  border-radius: 9999px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.pw-cancel {
+  background: transparent;
+  border-color: var(--border-divider);
+  color: var(--text-muted);
+}
+
+.pw-cancel:hover { color: var(--text-secondary); border-color: var(--text-ghost); }
+
+.pw-submit {
+  background: var(--text-accent);
+  color: #1A1714;
+}
+
+.pw-submit:hover { filter: brightness(1.08); }
