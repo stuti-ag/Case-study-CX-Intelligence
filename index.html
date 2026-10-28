@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stuti Agrawal</title>
+<title>Reframing contact-centre analytics — Stuti Agrawal</title>
 <link rel="stylesheet" href="styles.css">
 <script>document.documentElement.classList.add('js');</script>
 <style>
@@ -337,6 +337,7 @@
   .cs-disclaimer p{font-size:11.5px;font-style:italic;line-height:1.6;color:var(--text-ghost);max-width:640px}
 
   .solution-video{position:relative;margin-top:36px;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--border-divider);background:#1A1714;pointer-events:none;user-select:none}
+  .video-caption{margin-top:12px;font-size:13px;color:var(--text-ghost);text-align:center}
   .solution-video iframe{position:absolute;left:0;top:-22px;width:100%;height:calc(100% + 44px);border:0}
 
   /* ---------- Hero visual ---------- */
@@ -452,11 +453,15 @@
     <!-- Overview -->
     <header class="cs-header" id="overview" data-screen-label="Overview">
       <p class="eyebrow">CASE STUDY · B2B SaaS · Enterprise CX Intelligence Platform</p>
-      <h1>Reframing contact-center analytics into operational decision support</h1>
-      <p class="cs-intro">The platform turned billions of customer conversations into operational insights for enterprise contact centres. After two years in development, it had no paying customers and several stalled pilots. It could report what happened, but it couldn't help users decide what to do next.</p>
+      <h1>Reframing contact-centre analytics into operational decision support</h1>
+      <p class="cs-intro">The platform turned billions of unstructured customer conversations into structured analytics, giving contact centres quantitative visibility. After two years in development, it had no paying customers and several stalled pilots.</p>
       <p class="cs-intro">I partnered directly with the CEO to reposition the product around a clearer customer need, using prospective-customer insight to shape direction and guide execution.</p>
 
-      <div class="meta-row" style="grid-template-columns: repeat(2, minmax(0, 1fr))">
+      <div class="meta-row" style="grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr) minmax(0, 0.8fr)">
+        <div class="meta-col">
+          <p class="meta-k">Role</p>
+          <p class="meta-v">Lead Product Designer &amp; Product Strategy (Player-coach, leading 4 designers)</p>
+        </div>
         <div class="meta-col">
           <p class="meta-k">Collaborated with</p>
           <p class="meta-v">CEO, Product, Design, Engineering &amp; AI/ML</p>
@@ -515,15 +520,15 @@
     <!-- The gap -->
     <section class="cs-section" id="gap" data-screen-label="The gap" data-reveal="">
       <p class="eyebrow">The Gap</p>
-      <h2>Platform surfaced problems but left root causes unclear</h2>
-      <p class="body-m">AI turned billions of unstructured customer conversations into sentiment and operational insights across channels. Contact-centre leaders needed to understand why escalations increased, distinguish training gaps from staffing issues, and determine the right response.<br><br>Data revealed what had changed, but explaining why and determining next steps still required manual investigation.</p>
+      <h2>The platform surfaced problems but left root causes unclear</h2>
+      <p class="body-m">The platform showed what happened, but not why or what to do next. Interpreting signals remained a manual analyst task, so action often came after escalations, cost, and customer impact had grown.<br><br>The opportunity was not more dashboards. It was helping users move from signal to understanding to action.</p>
 
       <div class="gapwrap">
         <div class="gapflow">
           <div class="gaprow">
             <div class="gnode kept"><span class="gk">Captured</span>Customer conversations</div>
             <span class="garrow"></span>
-            <div class="gnode kept"><span class="gk">Analyzed</span>Conversation analytics</div>
+            <div class="gnode kept"><span class="gk">Analysed</span>Conversation analytics</div>
             <span class="garrow"></span>
             <div class="gnode kept"><span class="gk">Displayed</span>Dashboards &amp; reports</div>
             <span class="garrow break"></span>
@@ -583,36 +588,36 @@
       <div class="pivot-grid">
         <div class="pivot">
           <div class="pivot-head"><span class="pivot-n">01</span><h4>Frontline agents</h4></div>
-          <p class="pivot-sub">Working in real time</p>
+          <p class="pivot-sub">RAG-based knowledge assistant for live calls</p>
           <div class="pivot-mock">
             <span class="pm-accent" style="background: rgba(197,106,78,0.35)"></span>
             <span class="pm-bar" style="width: 70%"></span>
             <span class="pm-bar" style="width: 46%"></span>
           </div>
           <p class="pivot-learn-k">What we learned</p>
-          <p class="pivot-learn">Slow, unverified answers were too risky to rely on during live customer interactions.</p>
+          <p class="pivot-learn">Useful intent, but latency and the risk of incorrect answers made frontline use unsafe.</p>
         </div>
         <div class="pivot">
           <div class="pivot-head"><span class="pivot-n">02</span><h4>Managers</h4></div>
-          <p class="pivot-sub">Reviewing performance</p>
+          <p class="pivot-sub">Extended the RAG assistant so managers could create training plans</p>
           <div class="pivot-mock">
             <span class="pm-accent" style="background: rgba(133,166,127,0.35)"></span>
             <span class="pm-bar" style="width: 55%"></span>
             <span class="pm-bar" style="width: 80%"></span>
           </div>
           <p class="pivot-learn-k">What we learned</p>
-          <p class="pivot-learn">Managers lacked a clear starting point for identifying performance issues and deciding where to focus attention.</p>
+          <p class="pivot-learn">Managers gained control, but still lacked a starting point for finding agent or knowledge gaps.</p>
         </div>
         <div class="pivot">
           <div class="pivot-head"><span class="pivot-n">03</span><h4>Leadership</h4></div>
-          <p class="pivot-sub">Steering the operation</p>
+          <p class="pivot-sub">Context-aware AI chatbot, scoped to the topic</p>
           <div class="pivot-mock">
             <span class="pm-accent" style="background: rgba(138,147,168,0.35)"></span>
             <span class="pm-bar" style="width: 62%"></span>
             <span class="pm-bar" style="width: 38%"></span>
           </div>
           <p class="pivot-learn-k">What we learned</p>
-          <p class="pivot-learn">Insights sat outside daily workflows, limiting their usefulness as operational conditions changed.</p>
+          <p class="pivot-learn">Contextual insight felt valuable, but sat outside leaders’ daily workflow.</p>
         </div>
       </div>
     </section>
@@ -621,7 +626,7 @@
     <section class="cs-section" id="restructure" data-screen-label="Restructure" data-reveal="">
       <p class="eyebrow">The Insight Model</p>
       <h3>From querying data to surfacing actionable insight.</h3>
-      <p class="body-m">The original experience relied on people knowing what to ask and how to interpret the data. We shifted the approach towards surfacing relevant intelligence by role, with explanations that connected signals to operational context.</p>
+      <p class="body-m">With frontline use ruled out, the focus moved to managers and leadership. The original experience relied on people knowing what to ask and how to interpret the data. We shifted the approach towards surfacing relevant intelligence by role, with explanations that connected signals to operational context.</p>
 
       <div class="ba-grid">
         <div class="ba before">
@@ -651,27 +656,32 @@
     <section class="cs-section" id="solution" data-screen-label="Solution" data-reveal="">
       <p class="eyebrow">Solution</p>
       <h3>From performance signals to targeted interventions.</h3>
-      <p class="body-m">Role-based dashboards highlighted each leader’s most relevant KPIs and flagged changes against visual baselines. Leaders could drill down by agent, business unit, region, or other dimensions to investigate the drivers of declining performance.</p>
+      <p class="body-m">The solution centred on role-based workflows for managers and leadership teams. Role-based dashboards highlighted each manager’s most relevant KPIs and flagged changes against visual baselines. Managers could drill down by agent, business unit, region, or other dimensions to investigate the drivers of declining performance.</p>
       <p class="body-m">AI correlated performance signals to identify likely root causes and recommend targeted interventions, such as agent coaching or training, for manager review and approval. Actions requiring operational changes outside the platform were handed off to the relevant teams, connecting insight to action.</p>
       <div class="solution-video"><iframe name="solution-video" src="solution-flow.html?embed=1" tabindex="-1" aria-hidden="true" title="Solution flow: spot, investigate, understand, validate, act" loading="lazy"></iframe></div>
+      <p class="video-caption">Manager workflow</p>
     </section>
 
     <!-- Impact -->
     <section class="cs-section" id="impact" data-screen-label="Impact" data-reveal="">
       <p class="eyebrow">Impact</p>
       <h3>From stalled pilots to enterprise adoption</h3>
-      <div class="impact-row">
-        <div class="impact">
-          <p class="impact-t">0 → 1: First enterprise customer</p>
-          <p class="impact-k">Secured a large telco customer, validating the enterprise value proposition.</p>
+      <div class="impact-row" style="grid-template-columns:repeat(2,minmax(0,1fr));row-gap:40px">
+        <div class="impact" style="row-gap:0">
+          <p class="impact-t">0 → 1</p>
+          <p class="impact-k">Secured the first enterprise customer, a large EU telco.</p>
         </div>
-        <div class="impact">
-          <p class="impact-t">Cross-functional adoption</p>
-          <p class="impact-k">Expanded beyond contact-centre teams to CX and Sales, enabling use cases such as upsell identification.</p>
+        <div class="impact" style="row-gap:0">
+          <p class="impact-t">Expanded use cases</p>
+          <p class="impact-k">Adoption extended beyond contact-centre operations into Customer Experience and Sales.</p>
         </div>
-        <div class="impact">
+        <div class="impact" style="row-gap:0">
           <p class="impact-t">Faster time to insight</p>
-          <p class="impact-k">Contextual drill-downs and AI-surfaced drivers helped leaders identify likely root causes with less manual analysis.</p>
+          <p class="impact-k">Leaders moved from KPI change to likely root causes with less manual analysis.</p>
+        </div>
+        <div class="impact" style="row-gap:0">
+          <p class="impact-t">Actionable performance management</p>
+          <p class="impact-k">Managers got a directed starting point for coaching, with human approval built in.</p>
         </div>
       </div>
       <p class="impact-note">Company-level outcomes during the engagement; product repositioning and expansion were collaborative efforts.</p>
@@ -679,9 +689,9 @@
 
     <!-- Takeaway -->
     <section class="cs-section" id="takeaway" data-screen-label="Takeaway" data-reveal="">
-      <p class="eyebrow">Takeaway</p>
-      <h3>There was no playbook, so we learned our way to one.</h3>
-      <p class="body-m">When we started in 2023, generative AI in enterprise CX was still new territory, with no playbook for turning it into a product people would pay for. I came into this work focused on what the technology could do. What moved us forward was understanding the as-is process, listening to prospective customers, letting go of assumptions that didn't hold, and following where their needs led. It's a lesson I keep coming back to: stay curious, stay close to the problem, adapt as capabilities evolve, and let the opportunity reveal itself.</p>
+      <p class="eyebrow">What I take from it</p>
+      <h3>The hardest question was not “What can AI do?” It was “How can this product create value beyond analytics?”</h3>
+      <p class="body-m">By testing who the product should serve, where AI could help, and how insight should enter existing workflows, we turned a promising analytics platform into a decision-support product people could act on.</p>
     </section>
 
     <footer class="cs-disclaimer">
